@@ -2,7 +2,7 @@ variable "vault_addr" {
   default = "https://kmsvault.suryaprasad.xyz:8200"
 }
 variable "vault_token" {
-  default = "TOKEN-HERE"
+  default = "Enter Token"
 }
 
 variable "vm_count" {

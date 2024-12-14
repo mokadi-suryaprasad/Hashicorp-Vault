@@ -4,22 +4,22 @@ ui            = true
 listener "tcp" {
   address                  = "0.0.0.0:8200"
   tls_disable              = 0
-  tls_cert_file            = "/etc/letsencrypt/live/cloudvishwakarma.in/fullchain.pem"
-  tls_key_file             = "/etc/letsencrypt/live/cloudvishwakarma.in/privkey.pem"
+  tls_cert_file            = "/etc/letsencrypt/live/suryaprasad.xyz/fullchain.pem"
+  tls_key_file             = "/etc/letsencrypt/live/suryaprasad.xyz/privkey.pem"
   tls_disable_client_certs = "true"
 
 }
 storage "s3" {
-  bucket = "workspacesbucket01"
+  bucket = "hashicorpvault-bucket"
 }
 
 seal "awskms" {
   region     = "us-east-1"
-  kms_key_id = "KMSID here"
+  kms_key_id = "Enter kms key"
   endpoint   = "kms.us-east-1.amazonaws.com"
 }
 
-api_addr                = "https://kmsvault.cloudvishwakarma.in:8200"
+api_addr                = "https://kmsvault.suryaprasad.xyz:8200"
 max_lease_ttl           = "10h"
 default_lease_ttl       = "10h"
 cluster_name            = "vault"

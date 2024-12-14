@@ -9,3 +9,6 @@ resource "random_password" "linux-machine-passwords" {
   min_special      = 4
   min_numeric      = 4
 }
+
+
+	

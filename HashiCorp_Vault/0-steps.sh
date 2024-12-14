@@ -56,3 +56,6 @@ vault operator init | tee -a /etc/vault/init.file
 
 10
 vault operator init | tee -a /etc/vault/init.file
+
+
+
